@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>quiz</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="app">
+            <header class="header">
+                <h1 class="title">quiz</h1>
+                <div class="meta">
+                    <div id="progress" class="progress">spørsmål <span id="current">1</span>/<span id="total">5</span></div>
+                    <div id="timer" class="timer" aria-live="polite">--:--</div>
+                </div>
+            </header>
+
+            <section id="quiz" class="quiz" aria-live="polite">
+                <div id="question" class="question">Laster</div>
+                <ul id="choices" class="choices" role="list"></ul>
+            </section>
+
+            <nav class="controls">
+                <button id="prevBtn" class="btn" disabled>tilbake</button>
+                <button id="nextBtn" class="btn primary">neste</button>
+            </nav>
+
+            <div id="result" class="result hidden" role="dialog" aria-modal="true">
+                <div class="result-inner">
+                    <h2 id="scoreTitle">Score</h2>
+                    <p id="scoreText"></p>
+                    <button id="restartBtn" class="btn">På nytt</button>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
+</html>
